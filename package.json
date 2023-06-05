@@ -1,0 +1,54 @@
+{
+  "name": "fiatconnect-api",
+  "version": "0.0.1",
+  "description": "An example implementation of a FiatConnect-compliant API",
+  "main": "index.js",
+  "engines": {
+    "node": "^16"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --loglevel error --write \"./src/**/*.ts\"",
+    "format:check": "prettier --check \"./src/**/*.ts\"",
+    "lint": "eslint --ext=.tsx,.ts --fix src/",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
+  "prettier": "@valora/prettier-config",
+  "license": "MIT",
+  "dependencies": {
+    "@celo/utils": "^1.5.2",
+    "@fiatconnect/fiatconnect-types": "^13.0.2",
+    "@types/express": "^4.17.17",
+    "@types/node": "^17.0.21",
+    "@types/yargs": "^17.0.24",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@valora/eslint-config-typescript": "^0.0.1",
+    "@valora/prettier-config": "^0.0.1",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.25.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.31.10",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "ethers": "^5.7.2",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "prettier": "^2.8.8",
+    "siwe": "^1.1.6",
+    "typescript": "^5.0.4",
+    "yargs": "^17.7.2",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/express-session": "^1.17.7",
+    "@types/jest": "^27.5.2",
+    "@types/node-fetch": "2",
+    "@types/supertest": "^2.0.12",
+    "jest": "^27.5.1",
+    "node-fetch": "2",
+    "supertest": "^6.3.3",
+    "ts-jest": "^27.1.5",
+    "ts-node": "^10.9.1"
+  }
+}
