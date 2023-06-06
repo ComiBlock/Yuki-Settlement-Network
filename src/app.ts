@@ -8,11 +8,6 @@ import { errorToStatusCode } from './middleware/error'
 import { authRouter } from './routes/auth'
 import { NotImplementedError } from './types'
 
-function getSessionName(): string {
-  // must return a name for the session cookie, typically the provider name
-  throw new NotImplementedError('getSessionName not implemented')
-}
-
 export function initApp({
   clientAuthMiddleware,
   sessionSecret,
@@ -35,7 +30,7 @@ export function initApp({
   app.use(
     // https://www.npmjs.com/package/express-session-expire-timeout#sessionoptions
     Session({
-      name: getSessionName(),
+      name: 'fiat',
       secret: sessionSecret,
       resave: true,
       saveUninitialized: true,
