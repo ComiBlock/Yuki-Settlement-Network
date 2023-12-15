@@ -2,7 +2,7 @@
 
 This repository contains a prototype of the Yuki fiat network a connected ecosystem of on and off-ramps providers, allowing users to seamlessly ramp volumes between $10k to $500k. Here's a high-level overview of how it works:
 
-## Solution Descriptions
+## Solution Description
 The Yuki Network connects businesses to 10+ On/Off providers, 5+ payment methods, and 4+ stablecoins from day one.
 
 ## High level 
